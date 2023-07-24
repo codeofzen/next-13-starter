@@ -5,7 +5,6 @@ export async function GET(
     req: NextRequest,
     { params }: { params: { slug: string } }
 ) {
-    console.log('Posts');
     const post = posts.find((p) => p.slug === params.slug);
     if (post !== undefined) {
         const res: BlogPost = { title: post.title, content: post.content };

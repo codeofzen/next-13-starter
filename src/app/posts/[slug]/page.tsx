@@ -38,7 +38,6 @@ async function getPost(slug: string): Promise<BlogPost | null> {
 
     if (res.ok) {
         const data = await res.json();
-        console.log(data);
         return data;
     }
     return null;

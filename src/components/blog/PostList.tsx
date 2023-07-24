@@ -1,4 +1,3 @@
-// dummy data
 import { BlogList } from '@/types/blog';
 import { link } from 'fs';
 import Link from 'next/link';
